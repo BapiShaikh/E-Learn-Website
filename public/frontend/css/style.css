@@ -51,7 +51,7 @@ body{
   width: 100%;
   height: 100%;
   /* Set background image */
-  background-image: url('../images/img-bg-1.jpg');
+  background-image: url('../images/home-background.jpg');
 
 
   /* Optional: Center the background image */
@@ -63,9 +63,6 @@ body{
 }
 .mapping{
   display: flex;
-
-
-
 }
 
 .map-icon{
@@ -136,6 +133,7 @@ body{
     font-size: 50px;
   }
   .text-center-1 {
+    font-size: 40px;
     text-align: center;
     position: relative;
     animation: fadeInOut 2s infinite alternate;
@@ -150,14 +148,51 @@ body{
       opacity: 1; /* Fully opaque */
     }
   }
+  .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+  .dropdown-submenu {
+    position: relative;
+  }
+  .dropdown-submenu > a::after {
+    content: "\25B6"; /* Right arrow */
+    float: right;
+    margin-left: .5rem;
+  }
+  .dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: 0;
+    display: none;
+  }
+  .dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+  }
+  .dropdown-menu a {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+  }
 
   /* Course */
+  .course-card{
+
+    transition: transform 0.2s;
+    box-shadow: 5px 10px 8px #888888;
+  }
   .course-card:hover {
-    font-size: 20px;
-    margin-bottom: 56px;
-    margin-top: 56px; /* Added a semicolon here */
-    box-shadow: 0 0 10px rgba(253, 64, 12, 0.92); /* Adjusted the shadow color and size */
-    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+.enroll{
+    text-decoration: none;
 }
 
 .card {
@@ -352,7 +387,7 @@ body{
 .main1{
   margin: 20px;
   margin-right:70px;
-  height: 25vh;
+  height: 39vh;
   width: 30vw;
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
   box-shadow: 5px 10px 8px #888888;
@@ -361,7 +396,7 @@ body{
 .main2{
   margin: 20px;
   margin-right:70px;
-  height: 25vh;
+  height: 42vh;
   width: 30vw;
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
   box-shadow: 5px 10px 8px #888888;
@@ -369,7 +404,7 @@ body{
 .main3{
   margin: 20px;
   margin-right:70px;
-  height: 25vh;
+  height: 39vh;
   width: 30vw;
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
   box-shadow: 5px 10px 8px #888888;
@@ -408,6 +443,7 @@ body{
   background-color: rgb(218, 116, 116);
 }
 .t1{
+  font-size: 25px;
   animation: slideFromLeft 1s ease-in-out;
   color: rgb(10, 10, 10);
 }

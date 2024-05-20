@@ -47,7 +47,7 @@ class ContactController extends Controller
         'language'=>$language
     ];
     $data_table=DB::table('contact')->insert($data);
-    dd($data_table);
+    //dd($data_table);
     //return view('form')->with(['userInfo'=>$data]);
     //return redirect('/display');
 }

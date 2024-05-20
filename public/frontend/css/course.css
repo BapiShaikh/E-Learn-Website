@@ -35,7 +35,7 @@ body {
     max-width: 70em;
     flex-direction: row;
     margin: 3em auto;
-    background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+    background-color:rgb(153, 152, 152);
     transition: margin 0.3s, box-shadow 0.3s; /* Add transition for smooth effect */
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box-shadow */
@@ -49,6 +49,8 @@ body {
 
   .summary{
     text-decoration: none;
+    color: black;
+    font-size: 16px;
   }
   .summary:hover{
     color: blue;
@@ -60,7 +62,9 @@ body {
   .card.card.bg-light-subtle .card-title {
     color: dimgrey;
   }
-  
+  .card-text{
+    font-size: 20px;
+  }
   .card img {
     max-width: 25%;
     margin: auto;

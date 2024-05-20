@@ -51,29 +51,28 @@
         <a class="nav-link" href="{{url('about')}}">About</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Resources
-        </a>
-        <!-- dropdown menu -->
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="{{url('course')}}">Course</a>
-            <a class="dropdown-item" href="article.html">Article</a>
-            <a class="dropdown-item" href="#">System</a>
-            <div class="dropdown-divider"></div>
-            <div class="dropdown">
-              <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdownFeatures" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div class="dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownResources" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Resources
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownResources">
+              <a class="dropdown-item" href="{{url('course')}}">Course</a>
+              <a class="dropdown-item" href="article.html">Article</a>
+              <a class="dropdown-item" href="#">System</a>
+              <div class="dropdown-divider"></div>
+              <div class="dropdown-submenu">
+                <a class="dropdown-item " href="#" id="navbarDropdownFeatures" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Features
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownFeatures">
-                  <a class="dropdown-item" href="#">Feature 1</a>
-                  <a class="dropdown-item" href="#">Feature 2</a>
-                  <a class="dropdown-item" href="#">Feature 3</a>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownFeatures">
+                  <a class="dropdown-item" id="guideExplorationBtn" href="{{url('guide')}}">Guided Exploration</a>
+                  <a class="dropdown-item" href="{{url('interactive')}}">Interactive Modules</a>
+                  <a class="dropdown-item" href="{{url('real')}}">Real-World Connections</a>
                   <!-- Add more features as needed -->
+                </div>
               </div>
+            </div>
           </div>
-
-
-        </div>
     </li>
       <!-- <li class="nav-item">
         <a class="nav-link disabled" href="#">Disabled</a>
@@ -143,15 +142,15 @@
                               <div class="single-box">
                                   <div class="card course-card">
                                       <div class="imag-area">
-                                          <img src="{{url('frontend/images/still-life-851328_1280.jpg')}}" alt="" class="img-fluid rounded-top">
+                                          <img src="{{url('frontend/images/card/php.jpg')}}" alt="" class="img-fluid rounded-top">
                                       </div>
                                       <div class="card-body">
-                                          <b>Website</b>
+                                          <b>Website:PHP</b>
                                           <p class="card-text">
-                                              <b>Duration</b>
-                                              <b>Price</b>
+                                              <b>Duration:100Hrs</b><br>
+                                              <b>Price:&#8377;7000</b>
                                           </p>
-                                          <a href="{{url('course')}}"><button class="btn btn-outline-success btn-block">Enroll now</button></a>
+                                          <a href="{{url('course')}}"><button class="btn btn-outline-success btn-block enroll">Enroll now</button></a>
                                       </div>
                                   </div>
                               </div>
@@ -159,15 +158,16 @@
                           <div class="col-lg-3">
                               <div class="card course-card">
                                   <div>
-                                      <img src="{{url('frontend/images/still-life-851328_1280.jpg')}}" alt="" class="img-fluid rounded-top">
+                                      <img src="{{url('frontend/images/card/laravel.jpg')}}" alt="" class="img-fluid rounded-top">
                                   </div>
                                   <div class="card-body">
-                                      <b>Website</b>
+                                      <b>Website:Laravel</b>
                                       <p class="card-text">
-                                          <b>Duration</b>
-                                          <b>Price</b>
+                                          <b>Duration:100Hrs</b>
+                                          <br>
+                                          <b>Price:&#8377;8000</b>
                                       </p>
-                                      <a href="{{url('course')}}"><button class="btn btn-outline-success btn-block">Enroll now</button></a>
+                                      <a href="{{url('course')}}"><button class="btn btn-outline-success btn-block enroll">Enroll now</button></a>
                                   </div>
                               </div>
                           </div>
@@ -175,30 +175,32 @@
                           <div class="col-lg-3">
                             <div class="card course-card">
                                 <div>
-                                    <img src="{{url('frontend/images/still-life-851328_1280.jpg')}}" alt="" class="img-fluid rounded-top">
+                                    <img src="{{url('frontend/images/card/html.avif')}}" alt="" class="img-fluid rounded-top">
                                 </div>
                                 <div class="card-body">
-                                    <b>Website</b>
+                                    <b>Website:HTML</b>
                                     <p class="card-text">
-                                        <b>Duration</b>
-                                        <b>Price</b>
+                                        <b>Duration:100Hrs</b>
+                                          <br>
+                                          <b>Price:&#8377;8000</b>
                                     </p>
-                                    <a href="{{url('course')}}"><button class="btn btn-outline-success btn-block">Enroll now</button></a>
+                                    <a href="{{url('course')}}"><button class="btn btn-outline-success btn-block enroll">Enroll now</button></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3">
                           <div class="card course-card">
                               <div>
-                                  <img src="{{url('frontend/images/still-life-851328_1280.jpg')}}" alt="" class="img-fluid rounded-top">
+                                  <img src="{{url('frontend/images/card/css.jpg')}}" alt="" class="img-fluid rounded-top">
                               </div>
                               <div class="card-body">
-                                  <b>Website</b>
+                                  <b>Website:CSS</b>
                                   <p class="card-text">
-                                      <b>Duration</b>
-                                      <b>Price</b>
+                                    <b>Duration:100Hrs</b>
+                                    <br>
+                                    <b>Price:&#8377;8000</b>
                                   </p>
-                                  <a href="{{url('course')}}"><button class="btn btn-outline-success btn-block">Enroll now</button></a>
+                                  <a href="{{url('course')}}"><button class="btn btn-outline-success btn-block enroll">Enroll now</button></a>
                               </div>
                           </div>
                       </div>
@@ -240,15 +242,16 @@
                           <div class="col-lg-3">
                               <div class="card course-card">
                                   <div>
-                                      <img src="{{url('frontend/images/still-life-851328_1280.jpg')}}" alt="" class="img-fluid rounded-top">
+                                      <img src="{{url('frontend/images/card/javascript.jpg')}}" alt="" class="img-fluid rounded-top">
                                   </div>
                                   <div class="card-body">
-                                      <b>Website</b>
+                                      <b>Website:JavaScript</b>
                                       <p class="card-text">
-                                          <b>Duration</b>
-                                          <b>Price</b>
+                                        <b>Duration:100Hrs</b>
+                                        <br>
+                                        <b>Price:&#8377;8000</b>
                                       </p>
-                                      <a href="{{url('course')}}"><button class="btn btn-outline-success btn-block">Enroll now</button></a>
+                                      <a href="{{url('course')}}"><button class="btn btn-outline-success btn-block enroll">Enroll now</button></a>
                                   </div>
                               </div>
                           </div>
@@ -256,45 +259,48 @@
                           <div class="col-lg-3">
                               <div class="card course-card">
                                   <div>
-                                      <img src="{{url('frontend/images/na.jpg')}}" alt="" class="img-fluid rounded-top">
+                                      <img src="{{url('frontend/images/card/react.jpg')}}" alt="" class="img-fluid rounded-top">
                                   </div>
                                   <div class="card-body">
-                                      <b>Website</b>
+                                      <b>Website:REACT</b>
                                       <p class="card-text">
-                                          <b>Duration</b>
-                                          <b>Price</b>
+                                        <b>Duration:100Hrs</b>
+                                        <br>
+                                        <b>Price:&#8377;8000</b>
                                       </p>
-                                      <a href="{{url('course')}}"><button class="btn btn-outline-success btn-block">Enroll now</button></a>
+                                      <a href="{{url('course')}}"><button class="btn btn-outline-success btn-block enroll">Enroll now</button></a>
                                   </div>
                               </div>
                           </div>
                           <div class="col-lg-3">
                             <div class="card course-card">
                                 <div>
-                                    <img src="{{url('frontend/images/na.jpg')}}" alt="" class="img-fluid rounded-top">
+                                    <img src="{{url('frontend/images/card/angular.jpg')}}" alt="" class="img-fluid rounded-top">
                                 </div>
                                 <div class="card-body">
-                                    <b>Website</b>
+                                    <b>Website:Angular</b>
                                     <p class="card-text">
-                                        <b>Duration</b>
-                                        <b>Price</b>
+                                        <b>Duration:100Hrs</b>
+                                          <br>
+                                          <b>Price:&#8377;8000</b>
                                     </p>
-                                    <a href="{{url('course')}}"><button class="btn btn-outline-success btn-block">Enroll now</button></a>
+                                    <a href="{{url('course')}}"><button class="btn btn-outline-success btn-block enroll">Enroll now</button></a>
                                 </div>
                             </div>
                         </div>
                           <div class="col-lg-3">
                             <div class="card course-card">
                                 <div>
-                                    <img src="{{url('frontend/images/na.jpg')}}" alt="" class="img-fluid rounded-top">
+                                    <img src="{{url('frontend/images/card/dotnet.jpg')}}" alt="" class="img-fluid rounded-top">
                                 </div>
                                 <div class="card-body">
-                                    <b>Website</b>
+                                    <b>Website:DotNet</b>
                                     <p class="card-text">
-                                        <b>Duration</b>
-                                        <b>Price</b>
+                                        <b>Duration:100Hrs</b>
+                                          <br>
+                                          <b>Price:&#8377;8000</b>
                                     </p>
-                                    <a href="{{url('course')}}"><button class="btn btn-outline-success btn-block">Enroll now</button></a>
+                                    <a href="{{url('course')}}"><button class="btn btn-outline-success btn-block enroll">Enroll now</button></a>
                                 </div>
                             </div>
                         </div>
@@ -348,25 +354,27 @@
 
         </section>
         <!-- content creator -->
-        <h3 class="text-center-1">Content Heading</h3>
+        <h3 class="text-center-1">Invite Learners to Explore and Discover</h3>
         <div class="main-div">
 
           <div class="main1">
 
-            <h2 class="text-center t1">Content 1</h2>
-              <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quidem officia quibusdam ab repellendus minus itaque odit atque totam placeat facere vel rem, nisi quam.</p>
-              <a href="content1.html" class="btn btn-secondary my-2 my-sm-0 btn1" id="login" type="submit">View More</a>
+            <h2 class="text-center t1">Guided Exploration</h2>
+              <p class="para1">E-learning leverages digital technologies to facilitate education. It offers flexibility, diverse resources, and personalized learning experiences, enhancing accessibility and engagement for students globally.</p>
+              <a href="{{url('guide')}}" class="btn btn-secondary my-2 my-sm-0 btn1" id="login" type="submit">View More</a>
   </div>
 
 
           <div class="main2">
-            <h2 class="text-center t1">Content 2</h2>
-            <p class="para1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam adipisci amet labore quod laudantium animi impedit molestiae quo deserunt, aspernatur vero asperiores </p>
+            <h2 class="text-center t1">Interactive Modules</h2>
+            <p class="para1">
+                Interactive e-learning modules engage learners through simulations, quizzes, and drag-and-drop activities, allowing hands-on practice and immediate feedback, enhancing understanding and retention of the material.</p>
             <a href="content2.html" class="btn btn-secondary my-2 my-sm-0 btn1" id="login" type="submit">View More</a>
           </div>
           <div class="main3">
-            <h2 class="text-center t1">Content 3</h2>
-            <p class="para1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam adipisci amet labore quod laudantium animi impedit molestiae quo deserunt, aspernatur vero asperiores </p>
+            <h2 class="text-center t1">Real-World Connections</h2>
+            <p class="para1">
+                Real-world connections in e-learning enhance understanding by linking theory to practice, using case studies, industry expert lectures, and fieldwork, making learning relevant and immediately applicable.</p>
             <a href="content3.html" class="btn btn-secondary my-2 my-sm-0 btn1" id="login" type="submit">View More</a>
           </div>
 
@@ -600,7 +608,11 @@
     </div>
     <!-- End of .container -->
 
-
+    <script>
+        document.getElementById('guideExplorationBtn').addEventListener('click', function() {
+            window.location.href = '{{url('guide')}}';
+        });
+    </script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

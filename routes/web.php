@@ -26,6 +26,9 @@ Route::get('/', function () {
 });
 
 Route::get('/home',[HomeController::class,'index']);
+Route::get('/guide',[CourseController::class,'guide_index']);
+Route::get('/interactive',[CourseController::class,'interactive_index']);
+Route::get('/real',[CourseController::class,'real_index']);
 
 Route::get('/about',[AboutController::class,'index']);
 
